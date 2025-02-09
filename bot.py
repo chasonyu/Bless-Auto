@@ -386,6 +386,7 @@ class Bless:
             if not accounts:
                 self.log(f"{Fore.RED}No Accounts Loaded.{Style.RESET_ALL}")
                 return
+            self.handle_hardware_info(accounts)
 
             use_proxy_choice = self.print_question()
 
